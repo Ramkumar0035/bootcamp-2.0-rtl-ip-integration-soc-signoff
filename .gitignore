@@ -1,0 +1,72 @@
+# ============================================================
+# RTL / EDA Workshop Git Ignore
+# ============================================================
+
+# Verilator generated files
+obj_dir/
+*.vvp
+*.vpi
+*.d
+*.o
+*.a
+*.so
+
+# Simulation outputs
+*.vcd
+*.fst
+*.wlf
+*.vpd
+
+# Waveform databases
+*.ghw
+
+# Yosys / synthesis generated files
+*.json
+*.blif
+*.edif
+*.sdf
+*.dot
+
+# OpenLane generated runs
+runs/
+*.rpt
+*.log
+
+# Physical design generated files
+*.def
+*.gds
+*.lef
+*.spef
+*.spice
+
+# Temporary files
+*.tmp
+*.bak
+*~
+*.swp
+*.swo
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated screenshots / temporary exports
+*.png
+*.jpg
+*.jpeg
+
+# Keep important documentation/screenshots explicitly tracked
+!labs/**/screenshots/.gitkeep
+
+# Workshop waveform evidence
+!labs/**/waveforms/*.vcd
